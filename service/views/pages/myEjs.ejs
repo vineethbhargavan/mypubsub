@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pub Sub Interaction with Socket</title>
+</head>
+<script type="text/javascript" src ="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+ var userName =<%-JSON.stringify(userName)%>;
+ var socket = io.connect("http://localhost:3003");
+ console.log(userName);
+ socket.emit('handshake',userName);
+ socket.on('replyToHandshake',function(data){
+	console.log(data);
+ });
+
+</script>
+
+</html>

@@ -1,0 +1,10 @@
+{
+"iologlevel":"1",
+"loglevel":"info",
+"listeninterface":"0.0.0.0",
+
+
+"httpport" : "3003",
+}
+
+
